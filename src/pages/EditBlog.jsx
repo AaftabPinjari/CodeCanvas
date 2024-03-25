@@ -36,7 +36,7 @@ function EditBlog() {
     }
 
     return (
-        <div className="min-h-96 flex flex-col justify-center items-center">
+        <div className=" min-h-96 flex flex-col justify-center items-center">
             <h1>Edit a Blog Post</h1>
 
             <form
@@ -49,13 +49,14 @@ function EditBlog() {
                     onChange={editData}
                     className="text-black border-[1px] border-gray-700" />
                 <label>Enter Content Here</label>
-                <input
+                <textarea
+
                     name="content"
                     value={toUpdateBlog && toUpdateBlog.content}
                     onChange={editData}
-                    className=" text-black border-[1px] border-gray-700" />
+                    className="w-80 h-48 text-black border-[1px] border-gray-700" />
                 <label>Written By</label>
-                <textarea
+                <input
                     name="author"
                     value={toUpdateBlog && toUpdateBlog.author}
                     onChange={editData}

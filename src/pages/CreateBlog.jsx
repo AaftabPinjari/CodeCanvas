@@ -39,7 +39,8 @@ function CreateBlog() {
                     <label>Enter Content Here</label>
                     <textarea
                         onChange={getBlogData}
-                        name="content" className=" text-black border-[1px] border-gray-700" />
+                        name="content"
+                        className="w-80 h-48 text-black border-[1px] border-gray-700" />
                     <label>Written By</label>
                     <input
                         onChange={getBlogData}

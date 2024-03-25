@@ -4,11 +4,13 @@ import Blogs from "./pages/Blogs"
 import EditBlog from "./pages/EditBlog"
 import CreateBlog from "./pages/CreateBlog"
 import Navbar from "./components/Navbar"
+import Logo from "./components/Logo"
 
 function App() {
 
   return (
     <>
+      <Logo />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
