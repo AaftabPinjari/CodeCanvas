@@ -23,9 +23,9 @@ function Blogs() {
                             <div
                                 className=" flex justify-between py-2 items-center border-b-[0.1px] border-gray-700"
                                 key={blog.title}>
-                                <di className="w-2/3">
+                                <div className="w-2/3 flex flex-col gap-2">
                                     <h1 className="text-xl  lg:text-2xl xl:text-3xl font-semibold">{blog.title}</h1>
-                                    <h3 className="text-lg    font-semibold">By: {blog.author}</h3>
+                                    <h3 className="text-sm font-medium">By: {blog.author}</h3>
                                     <div>
                                         <button
                                             className="text-red-500"
@@ -35,7 +35,7 @@ function Blogs() {
                                             className=" ml-2"
                                         >Edit</Link>
                                     </div>
-                                </di>
+                                </div>
                                 <div className="w/1/3">
                                     <img
                                         className="h-24 w-2h-24 rounded"
