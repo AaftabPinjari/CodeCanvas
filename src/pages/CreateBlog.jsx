@@ -26,14 +26,19 @@ function CreateBlog() {
 
     return (
         <>
-            <div className="min-h-96 flex flex-col justify-center items-center">
-                <h1>Create a Blog Post</h1>
+            <div className="min-h-96 flex flex-col  justify-center items-center">
+                <h1 className="text-xl font-semibold">Create a Blog Post</h1>
                 <form
-                    className="flex flex-col"
+                    className="flex flex-col gap-1 text-center"
                     onSubmit={handleSubmit}>
                     <label>Enter the title</label>
                     <input
                         name="title"
+                        onChange={getBlogData}
+                        className="text-black border-[1px] border-gray-700" />
+                    <label>Enter Image Url Here</label>
+                    <input
+                        name="cover"
                         onChange={getBlogData}
                         className="text-black border-[1px] border-gray-700" />
                     <label>Enter Content Here</label>

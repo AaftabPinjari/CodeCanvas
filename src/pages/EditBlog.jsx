@@ -36,16 +36,22 @@ function EditBlog() {
     }
 
     return (
-        <div className=" min-h-96 flex flex-col justify-center items-center">
-            <h1>Edit a Blog Post</h1>
+        <div className=" min-h-96 flex flex-col  justify-center items-center">
+            <h1 className="text-xl font-semibold">Edit a Blog Post</h1>
 
             <form
-                className="flex flex-col"
+                className="flex flex-col gap-1 text-center"
                 onSubmit={handleEdit}>
                 <label>Enter the title</label>
                 <input
                     name="title"
                     value={toUpdateBlog && toUpdateBlog.title}
+                    onChange={editData}
+                    className="text-black border-[1px] border-gray-700" />
+                <label>Enter Image Url Here</label>
+                <input
+                    name="cover"
+                    value={toUpdateBlog && toUpdateBlog.cover}
                     onChange={editData}
                     className="text-black border-[1px] border-gray-700" />
                 <label>Enter Content Here</label>

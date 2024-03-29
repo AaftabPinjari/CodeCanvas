@@ -24,7 +24,7 @@ function Blogs() {
                                 className=" flex justify-between py-2 items-center border-b-[0.1px] border-gray-700"
                                 key={blog.title}>
                                 <div className="w-2/3 flex flex-col gap-2">
-                                    <h1 className="text-xl  lg:text-2xl xl:text-3xl font-semibold">{blog.title}</h1>
+                                    <Link to={`/blogs/${blog.id}`}><h1 className="text-xl  lg:text-2xl xl:text-3xl font-semibold">{blog.title}</h1></Link>
                                     <h3 className="text-sm font-medium">By: {blog.author}</h3>
                                     <div>
                                         <button
