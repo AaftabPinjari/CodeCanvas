@@ -18,7 +18,7 @@ function Blog() {
                 <div className='flex flex-col items-center gap-3 text-gray-400 py-4'>
                     <h1 className='text-3xl text-center font-bold'>{blog && blog.title}</h1>
                     <img
-                        className='h-[300px] w-[400px]'
+                        className='h-[400px] w-[400px]'
                         src={blog.cover} />
                     <h3 className='text-center'>By: {blog.author}</h3>
                     <p className='text-lg px-4 md:px-10 lg:px-16 xl:px-32'>{blog.content}</p>

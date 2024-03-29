@@ -12,7 +12,8 @@ function Blogs() {
         dispatch(readBlogs())
     }, [])
 
-    // if (isLoading) return <h1>Loading...</h1>
+
+    if (isLoading) return <h1>Loading...</h1>
     // console.log(blogsArray)
     return (
         <>
@@ -38,7 +39,7 @@ function Blogs() {
                                 </div>
                                 <div className="w/1/3">
                                     <img
-                                        className="h-24 w-2h-24 rounded"
+                                        className="h-24 w-24 rounded"
                                         src={blog.cover} />
                                 </div>
                             </div>
